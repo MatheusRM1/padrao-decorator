@@ -11,10 +11,10 @@ public abstract class LocacaoDecorator implements Locacao{
 
     public void setLocacao(Locacao locacao) {this.locacao = locacao; }
 
-    public abstract float getPercentualPreco();
+    public abstract float getPercentualValor();
 
     public float getValor(){
-        return this.locacao.getValor() * (1 + (this.getPercentualPreco() / 100));
+        return this.locacao.getValor() * (1 + (this.getPercentualValor() / 100));
     }
 
     public abstract String getNomeEstrutura();

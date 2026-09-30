@@ -8,7 +8,7 @@ public class LocacaoCarro implements Locacao{
 
     public LocacaoCarro(float preco){ this.preco = preco; }
 
-    public float getPreco(){ return preco; }
+    public float getValor(){ return preco; }
 
     public String getEstrutura() {
         return "Carro";
